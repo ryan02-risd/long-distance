@@ -1,0 +1,39 @@
+::selection{
+    background-color:black;
+    color:white;
+}
+
+@font-face{
+    font-family:"Oracle";
+    src:url("harber.ttf") format("openType");
+}
+
+p{
+    font-family:Oracle;
+    /* font-weight:1; */
+    /* text-align:justify */
+}
+
+b{
+    /* font-weight:5; */
+}
+
+.sizing{
+    font-weight:1;
+}
+
+@media screen and (max-width: 1000px) {
+    .columns{
+        column-count:1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .columns{
+        column-count:4;
+    }
+}
+.columns{
+    column-count:0;
+    column-gap:10px;
+}
