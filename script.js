@@ -6,13 +6,13 @@ function updateFontSize(){
     const width = window.innerWidth;
   
     //window min, max, font "min", font "max"
-    let fontSize = map(width, 300, 1300, 200, 15);
-    let fontWeight = map(width, 800, 1300, 1, 15);
+    let fontSize = map(width, 300, 1500, 300, 5);
+    let fontWeight = map(width, 800, 1500, 1, 15);
 
     windowSizeParagraph.style.fontSize = fontSize + "px";
     windowSizeParagraph.style.lineHeight= fontSize + (fontSize/1.5 + 7) + "px";
     windowSizeParagraph.style.fontWeight = fontWeight;
-    fontSizeValue.textContent = fontSize;
+    fontSizeValue.textContent = Math.floor(fontSize);
     widthValue.textContent = width;
 }
 

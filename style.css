@@ -22,17 +22,30 @@ b{
     font-weight:1;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
     .columns{
         column-count:1;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1250px) {
+    .columns{
+        column-count:2;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .columns{
+        column-count:3;
+    }
+}
+
+@media screen and (min-width: 1450px) {
     .columns{
         column-count:4;
     }
 }
+
 .columns{
     column-count:0;
     column-gap:10px;
