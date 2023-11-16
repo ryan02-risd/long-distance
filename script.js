@@ -17,9 +17,10 @@ function updateFontSize(){
 }
 
 // Mapping function
-function map(value, inputMin, inputMax, outputMin, outputMax){
-    return (value - inputMin) / (inputMax - inputMin) * (outputMax - outputMin) + outputMin;
-
+function map(value, inputMin, inputMax, outputMin, outputMax) {
+    let result = (value - inputMin) / (inputMax - inputMin) * (outputMax - outputMin) + outputMin;
+    
+    return Math.max(result, 5);
 }
 
 

@@ -4,22 +4,53 @@
 }
 
 @font-face{
-    font-family:"Oracle";
+    font-family:"Harber";
     src:url("harber.ttf") format("openType");
 }
 
+body{
+    margin:0px;
+}
+
 p{
-    font-family:Oracle;
+    font-family:Harber;
     /* font-weight:1; */
     /* text-align:justify */
+}
+
+h1{
+    font-family:Harber;
+    font-weight:5;
+    font-size:15px;
 }
 
 b{
     /* font-weight:5; */
 }
 
+.header-container{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color:black;
+    color:white;
+}
+
+.header-wrapper{
+    margin:10px;
+    display:flex;
+    flex-direction:column;
+    line-height:10px;
+}
+
 .sizing{
+    display:flexbox;
+    /* justify-content:space-between; */
     font-weight:1;
+}
+
+.sizing p{
+    font-size:10px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -47,6 +78,7 @@ b{
 }
 
 .columns{
+    margin:5px;
     column-count:0;
     column-gap:10px;
 }
